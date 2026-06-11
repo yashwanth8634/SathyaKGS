@@ -42,8 +42,8 @@ export default function Navbar() {
       <motion.nav
         className={`mx-auto mt-3 flex max-w-6xl items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-6 ${
           isScrolled
-            ? "liquid-glass-strong shadow-warm-lg"
-            : "liquid-glass shadow-warm-sm"
+            ? "frosted-glass shadow-warm-lg"
+            : "bg-white/20 backdrop-blur-xl border border-white/30 shadow-warm-sm"
         }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -82,47 +82,89 @@ export default function RootLayout({
 }>) {
   const schemaOrgJSONLD = {
     "@context": "https://schema.org",
-    "@type": "GroceryStore",
-    name: "Sathya Kirana & General Store",
-    image: "https://sathyakirana.qzz.io/og-image.jpg",
-    "@id": "https://sathyakirana.qzz.io",
-    url: "https://sathyakirana.qzz.io",
-    telephone: "+919848055614",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Plot No 127, Yadadri Colony, Pedda Amberpet",
-      addressLocality: "Hyderabad",
-      addressRegion: "Telangana",
-      postalCode: "501513",
-      addressCountry: "IN",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 17.3204,
-      longitude: 78.6366,
-    },
-    openingHoursSpecification: [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
+        "@type": "GroceryStore",
+        name: "Sathya Kirana & General Store",
+        image: "https://sathyakirana.qzz.io/og-image.jpg",
+        "@id": "https://sathyakirana.qzz.io/#store",
+        url: "https://sathyakirana.qzz.io",
+        telephone: "+919848055614",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Plot No 127, Yadadri Colony, Pedda Amberpet",
+          addressLocality: "Hyderabad",
+          addressRegion: "Telangana",
+          postalCode: "501513",
+          addressCountry: "IN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 17.3204,
+          longitude: 78.6366,
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            opens: "06:00",
+            closes: "22:00",
+          },
         ],
-        opens: "06:00",
-        closes: "22:00",
+        priceRange: "₹",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          reviewCount: "5",
+        },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sathyakirana.qzz.io/#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What are the timings for Sathya Kirana & General Store?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We are open every day from 6:00 AM to 10:00 PM.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Where is Sathya Kirana & General Store located?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Our store is located at Plot No 127, Yadadri Colony, Pedda Amberpet, Hyderabad, Telangana 501513.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does Sathya Kirana deliver groceries?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Currently, we do not offer home delivery. However, you can walk in and shop, or place an order via WhatsApp and pick it up from our store.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What products are available at Sathya Kirana & General Store?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We stock a wide variety of daily essentials including rice, dal, spices, masalas, cooking oils, ghee, snacks, personal care products, dairy, fresh items, beverages, and household cleaning supplies.",
+            },
+          },
+        ],
       },
     ],
-    priceRange: "₹",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "5",
-    },
   };
 
   return (
