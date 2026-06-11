@@ -42,8 +42,8 @@ export default function Navbar() {
       <motion.nav
         className={`mx-auto mt-3 flex max-w-6xl items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-6 ${
           isScrolled
-            ? "frosted-glass shadow-warm-lg"
-            : "bg-white/20 backdrop-blur-xl border border-white/30 shadow-warm-sm"
+            ? "bg-white/20 backdrop-blur-2xl border border-white/50 shadow-warm-lg saturate-150"
+            : "bg-white/30 backdrop-blur-md border border-white/30 shadow-warm-sm saturate-100"
         }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -76,7 +76,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
           >
             <Button
-              className="ml-2 rounded-xl bg-kirana-primary px-4 py-1.5 text-sm font-medium text-white shadow-warm-sm transition-all duration-200 hover:bg-kirana-primary-light hover:shadow-warm hover:scale-105"
+              className="ml-2 rounded-xl bg-green-600 px-4 py-1.5 text-sm font-medium text-white shadow-warm-sm transition-all duration-200 hover:bg-green-700 hover:shadow-warm hover:scale-105"
               aria-label="Contact us on WhatsApp"
             >
               <MessageCircle className="mr-1.5 size-4" />
@@ -136,7 +136,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="mt-4 px-4"
                 >
-                  <Button className="w-full rounded-pill bg-kirana-primary text-white hover:bg-kirana-primary-light">
+                  <Button className="w-full rounded-pill bg-green-600 text-white hover:bg-green-700">
                     <MessageCircle className="mr-2 size-4" />
                     WhatsApp Us
                   </Button>
