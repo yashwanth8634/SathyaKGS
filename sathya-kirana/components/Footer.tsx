@@ -75,7 +75,7 @@ export default function Footer() {
                 <Clock className="mt-0.5 size-4 shrink-0 text-kirana-accent" />
                 <div>
                   <span className="text-white">Every Day</span>
-                  <br />
+                  <span className="text-white/40"> · </span>
                   <span className="text-white/60">6:00 AM – 10:00 PM</span>
                 </div>
               </li>

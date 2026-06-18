@@ -30,24 +30,24 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Sathya Kirana & General Store | Pedda Amberpet",
+  title: "Sathya Kirana & General Store – Grocery Shop in Pedda Amberpet, Hyderabad",
   description:
-    "Your neighbourhood kirana store in Pedda Amberpet, Hyderabad. Quality groceries, daily essentials, and household items at fair prices. Open daily 6 AM to 10 PM.",
+    "Sathya Kirana & General Store is your trusted neighbourhood grocery shop in Pedda Amberpet, Hyderabad. We offer fresh rice, dal, spices, cooking oils, dairy, snacks, and daily essentials at fair prices. Open every day 6:00 AM to 10:00 PM. Call or WhatsApp us at 098480 55614.",
   keywords: [
-    "kirana store",
-    "general store",
-    "grocery store",
-    "supermarket near me",
-    "Pedda Amberpet",
-    "Hyderabad",
-    "daily essentials",
     "Sathya Kirana",
+    "kirana store Pedda Amberpet",
+    "grocery store Hyderabad",
+    "general store near me",
+    "supermarket Pedda Amberpet",
+    "daily essentials Hyderabad",
+    "grocery shop Yadadri Colony",
+    "kirana store near me",
   ],
   metadataBase: new URL("https://sathyakirana.qzz.io"),
   openGraph: {
-    title: "Sathya Kirana & General Store | Pedda Amberpet",
+    title: "Sathya Kirana & General Store – Pedda Amberpet, Hyderabad",
     description:
-      "Your neighbourhood kirana store in Pedda Amberpet, Hyderabad. Quality groceries, daily essentials, and household items at fair prices. Open daily 6 AM to 10 PM.",
+      "Your trusted neighbourhood grocery shop in Pedda Amberpet, Hyderabad. Fresh groceries, daily essentials, and household items at fair prices. Open every day 6 AM – 10 PM.",
     url: "https://sathyakirana.qzz.io",
     siteName: "Sathya Kirana & General Store",
     locale: "en_IN",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sathya Kirana & General Store",
+    title: "Sathya Kirana & General Store – Pedda Amberpet, Hyderabad",
     description:
-      "Your trusted neighbourhood kirana store in Pedda Amberpet, Hyderabad — fresh groceries and daily essentials.",
+      "Fresh groceries and daily essentials at fair prices. Visit us at Pedda Amberpet, Hyderabad. Open every day 6 AM – 10 PM.",
   },
   robots: {
     index: true,

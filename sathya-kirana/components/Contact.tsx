@@ -166,7 +166,7 @@ export default function Contact() {
                 <div className="mb-4 space-y-1.5 text-sm text-kirana-text-muted">
                   <div className="flex justify-between gap-8">
                     <span>Every Day</span>
-                    <span className="font-medium text-kirana-text">
+                    <span className="font-medium text-kirana-text" aria-label="6:00 AM to 10:00 PM">
                       6:00 AM – 10:00 PM
                     </span>
                   </div>
